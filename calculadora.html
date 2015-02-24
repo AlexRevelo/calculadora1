@@ -1,36 +1,49 @@
 <html>
-<head>
-	<title>Calculadora</title>
-</head>
-<body>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="calcular.js"></script>
+        <link type="text/css" href="style.css" rel="StyleSheet">
+    </head>
+    <body>
+        <div class="calculadora">
+<form action="#" name="calculadora" id="calculadora">
+<p id="textoPantalla">0</p>
 
 
-	<input type="text" >
-<div>
+<p>
+<input type="button" value="1" onclick="numero('1')"/>
+<input type="button" value="2" onclick="numero('2')"/>
+<input type="button" value="3" onclick="numero('3')"/>
+<input type="button" value="4" onclick="numero('4')"/>
+<input type="button" value="5" onclick="numero('5')"/>
+<input type="button" value="6" onclick="numero('6')"/>
+<input type="button" value="7" onclick="numero('7')"/>
+<input type="button" value="8" onclick="numero('8')"/>
+<input type="button" value="9" onclick="numero('9')"/>
+<input type="button" value="0" onclick="numero('0')"/>
 
-<button onclick="1">1</button>
-<button onclick="2">2</button>
-<button onclick="3">3</button>
-<button onclick="4">4</button>
+</p>
+<p>
+    <input type="button" value="+" onclick="operar('+')" />
+    <input type="button" value="-" onclick="operar('-')"/>
+    <input type="button" value="*" onclick="operar('*')"/>
+    <input type="button" value="/"  onclick="operar('/')"/>
+    <input type="button" value="Raiz" onclick="raizc()"/>
+     <input type="button" value="Exp" onclick="expc()"/>
+</p>
+<p>
+     <input type="button" value="senX"  onclick="senx()"/>
+    <input type="button" value="cosX" onclick="cosx()"/>
+     <input type="button" value="tanX" onclick="tanx()"/>
+<input type="button" value="=" onclick="igualar()"/>
 
-<button onclick="5">5</button>
-<button onclick="6">6</button>
-<button onclick="7">7</button>
-<button onclick="8">8</button>
 
-<button onclick="9">9</button>
-<button onclick="0">0</button>
-<div>
-<button onclick="sum">+</button>
-<button onclick="res">-</button>
-<button onclick="mul">*</button>
-<button onclick="div">/</button>
-<button onclick="raiz">Raiz</button>
-<button onclick="exp">X^2</button>
-<div>
-<button onclick="sen">senX</button>
-<button onclick="cos">cosX</button>
-<button onclick="tan">tanX</button>
-<button onclick="igual" style='width:60px; height:25px'>=</button>
-</body>
+</p>
+</form> 
+</div>
+
+
+    </body>
 </html>
